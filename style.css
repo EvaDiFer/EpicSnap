@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+:root {
+  --primary-color: #9aa1b0;
+  --secundary-color: #b2b9c4;
+  --color-text: #2b2b2b;
+  --button-color: #5e5e5e;
+  --shadow-color: 0 0 10px rgba(255, 255, 255, 0.926);
+  --font-family: 'Archivo Black', sans-serif;
+  --border-img: solid 3px rgb(48, 48, 48);
+  --font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  background-image: url('https://www.transparenttextures.com/patterns/old-wall.png');
+  font-family: var(--font-family);
+}
+
+a,
+p,
+h2 {
+  color: rgb(30, 29, 29);
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--secundary-color);
+  padding: 1rem;
+  border: var(--border-img);
+}
+
+#epicSnapLink {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#epicSnapLink img {
+  max-width: 35px;
+  height: auto;
+}
+
+#exploreContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 20px;
+}
+
+.input {
+  padding: 5px;
+  font-size: var(--font-size);
+  border: none;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.exploreButton {
+  background-color: var(--button-color);
+  color: white;
+  padding: 5px 20px;
+  font-size: var(--font-size);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.exploreButton:hover {
+  background-color: var(--secundary-color);
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 130px;
+  color: var(--color-text);
+}
+
+.container img {
+  width: 400px;
+  height: 400px;
+  gap: 1rem;
+  object-fit: cover;
+  margin: 15px;
+  border-radius: 10px;
+  transition: transform 0.6s ease;
+}
+
+.container img:hover {
+  transform: scale(0.9);
+  box-shadow: var(--shadow-color);
+  opacity: 0.8;
+}
+
+.footer-content {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--secundary-color);
+  color: var(--color-text);
+  text-align: center;
+  padding: 1rem;
+  border: solid 3px rgb(48, 48, 48);
+}
